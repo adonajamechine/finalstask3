@@ -1,0 +1,159 @@
+* {
+
+    transition: all 0.3s ease;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    grid-template-rows: 1fr 2fr 1fr auto;
+
+    grid-template-areas:
+
+    "header header"
+
+    "main nav"
+
+    "aside aside"
+
+    "footer footer";
+
+    background-color: hotpink;
+
+    color: white;
+
+}
+
+header {
+
+    grid-area: header;
+
+    font-size: x-large;
+
+    padding: 10px;
+
+}
+
+header h1 {
+
+    margin: 0 auto;
+
+}
+
+main h2, main h1 {
+
+    color: hotpink;
+
+}
+
+main {
+
+    grid-area: main;
+
+    background-color: white;
+
+    color: black;
+
+    padding: 10px;
+
+}
+
+main a {
+
+    color: hotpink;
+
+    text-decoration: none;
+
+}
+
+main a:hover {
+
+    color: #ff3f3f;
+
+}
+
+nav {
+
+    grid-area: nav;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    background-color: white;
+
+    color: black;
+
+}
+
+nav ul {
+
+    margin-block-start: 0;
+
+    list-style-type: none;
+
+    padding: 0px;
+
+}
+
+nav li {
+
+    color: white;
+
+    background-color: hotpink;
+
+    border: 1px solid rgb(219, 138, 179);
+
+    border-radius: 30px;
+
+    margin: 10px;
+
+    padding: 3px 50px;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+
+}
+
+nav li:hover {
+
+    color: rgb(226, 148, 187);
+
+    background-color: white;
+
+    transition: all 0.3s ease;
+
+}
+
+aside {
+
+    grid-area: aside;
+
+    background-color: antiquewhite;
+
+    color: rgb(226, 140, 183);
+
+    padding: 10px;
+
+}
+
+footer {
+
+    grid-area: footer;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
